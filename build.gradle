@@ -13,7 +13,6 @@ plugins {
 }
 
 group 'com.github.grzesiek-galezowski'
-version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply from: 'gradle/release.gradle'
