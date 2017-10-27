@@ -1,7 +1,22 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+plugins {
+    id 'net.researchgate.release' version "2.6.0"
+    id 'com.github.ben-manes.versions' version '0.15.0'
+    id 'io.franzbecker.gradle-lombok' version '1.8'
+}
+
 group 'com.github.grzesiek-galezowski'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply from: 'gradle/release.gradle'
 
 sourceCompatibility = 1.8
 
@@ -10,5 +25,5 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.slf4j:slf4j-api:1.7.25'
 }

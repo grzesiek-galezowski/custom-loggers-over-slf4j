@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j_main.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j_main.iml" group="custom-loggers-over-slf4j" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j_test.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-loggers-over-slf4j_test.iml" group="custom-loggers-over-slf4j" />
     </modules>
   </component>
 </project>
