@@ -73,3 +73,5 @@ fabric.properties
 *.lock
 .gradle/*
 .idea/sonarlint/*
+.idea/markdown-navigator.xml
+build/*
