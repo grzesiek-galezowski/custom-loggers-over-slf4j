@@ -10,6 +10,7 @@ plugins {
     id 'net.researchgate.release' version "2.6.0"
     id 'com.github.ben-manes.versions' version '0.15.0'
     id 'io.franzbecker.gradle-lombok' version '1.8'
+    id 'net.ltgt.apt' version '0.10'
 }
 
 group 'com.github.grzesiek-galezowski'
@@ -21,8 +22,27 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
+
 dependencies {
+    apt "org.projectlombok:lombok:1.16.18"
+
     compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'org.slf4j:slf4j-ext:1.7.25'
+    compileOnly group: 'org.projectlombok', name: 'lombok-maven', version: '1.16.18.1', ext: 'pom'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compileOnly 'org.apiguardian:apiguardian-api:1.0.0'
+
+    testCompile 'com.github.grzesiek-galezowski:tdd-toolkit-java:1.0.35'
+    testCompile 'ch.qos.logback:logback-classic:1.2.3'
+    testCompile 'ch.qos.logback:logback-core:1.2.3'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.0.1'
+
+}
+
+lombok {
+    version = "1.16.18"
+    sha256 = ""
 }
